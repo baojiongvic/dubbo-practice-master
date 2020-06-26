@@ -5,7 +5,7 @@ package com.baojiong.dubbo.service;
  */
 public interface IUserInfoService {
     /**
-     *
+     * 打印
      */
-    void printf();
+    void print();
 }

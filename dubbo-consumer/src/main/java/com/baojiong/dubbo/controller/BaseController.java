@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by baojiong on 2018/8/15 18:40
+ * @author baojiong on 2018/8/15 18:40
  */
 @RestController
 public class BaseController {
@@ -14,9 +14,9 @@ public class BaseController {
     @Autowired
     private UseService useService;
 
-    @RequestMapping(value = "/printf")
-    public void printf(){
-        useService.printftest();
+    @RequestMapping(value = "/print")
+    public void print(){
+        useService.printTest();
     }
 
 }

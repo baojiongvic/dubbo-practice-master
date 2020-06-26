@@ -9,10 +9,10 @@ import com.baojiong.dubbo.service.IUserInfoService;
 @Service
 public class IUserInfoServiceImpl implements IUserInfoService {
     /**
-     *
+     * 打印方法实现
      */
     @Override
-    public void printf() {
+    public void print() {
         System.out.println("dubbo success");
     }
 }
