@@ -1,5 +1,9 @@
 package com.baojiong.dubbo.filter;
 
+import com.alibaba.dubbo.rpc.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * 源程序名称：ComsumerFilter <br>
  * 源程序包名：com.baojiong.dubbo.filter <br>
@@ -9,5 +13,13 @@ package com.baojiong.dubbo.filter;
  *
  * @author baojiong20176
  */
-public class ComsumerFilter {
+public class ConsumerFilter implements Filter {
+
+    private static final Logger logger = LoggerFactory.getLogger(ConsumerFilter.class);
+
+    @Override
+    public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
+        logger.info("已发送请求");
+        return invoker.invoke(invocation);
+    }
 }
