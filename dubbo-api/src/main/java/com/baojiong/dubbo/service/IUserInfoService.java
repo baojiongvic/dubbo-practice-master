@@ -1,8 +1,11 @@
 package com.baojiong.dubbo.service;
 
 /**
- * Created by baojiong on 2018/8/15 18:39
+ * @author baojiong
  */
 public interface IUserInfoService {
+    /**
+     *
+     */
     void printf();
 }
